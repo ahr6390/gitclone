@@ -3,8 +3,8 @@ import { useState } from 'react';
 import Chat from './components/Chat';
 import styled from 'styled-components';
 
-// const socket = io.connect('http://18.212.128.231:80');
-const socket = io.connect('http://localhost:80');
+const socket = io.connect('http://34.207.245.176:80');
+// const socket = io.connect('http://localhost:80');
 
 
 function App() {
