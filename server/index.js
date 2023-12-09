@@ -9,7 +9,7 @@ app.use(cors());
 
 const server = http.createServer(app);
 
-const port = 80;
+const port = 4000;
 
 const conn = mysql.createPool({
   host : "database-1.ciplc66fgajs.us-east-1.rds.amazonaws.com",
