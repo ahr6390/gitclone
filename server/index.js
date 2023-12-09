@@ -46,15 +46,15 @@ io.on("connection", (socket) => {
           console.log('success');
           // console.log(JSON.stringify(data));
           
-          console.log(data);      
+          //console.log(data);      
           
           for (var datas of data) {
             list.push(datas.author);
             list.push(datas.message);
             list.push(datas.time);
           } 
-          console.log(list);
-          console.log(list.length);
+          //console.log(list);
+          //console.log(list.length);
 
           for(let i = 0; i < list.length; i++){
             if(i%3==0){
@@ -64,7 +64,7 @@ io.on("connection", (socket) => {
                 time: `${list[i+2]}`
               }
           
-             console.log(lists);
+             //console.log(lists);
              socket.emit('list_message', lists);
             }
           }
