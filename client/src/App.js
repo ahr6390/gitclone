@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Chat from './components/Chat';
 import styled from 'styled-components';
 
-const socket = io.connect('http://54.234.27.18:80');
+const socket = io.connect('http://54.234.27.18:4000');
 // const socket = io.connect('http://localhost:80');
 
 
