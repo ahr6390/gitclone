@@ -9,7 +9,7 @@ app.use(cors());
 
 const server = http.createServer(app);
 
-const port = 4000;
+const port = 80;
 
 const conn = mysql.createPool({
   host : "database-1.ciplc66fgajs.us-east-1.rds.amazonaws.com",
@@ -79,7 +79,7 @@ io.on("connection", (socket) => {
       message:`${data.username} 유저가 방에 입장했습니다`,
       author:'알림'
     }
-    console.log(noti);
+    //console.log(noti);
     socket.to(data.room).emit('receive_message', noti);
     
   });
