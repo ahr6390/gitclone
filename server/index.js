@@ -12,7 +12,7 @@ const server = http.createServer(app);
 const port = 80;
 
 const conn = mysql.createPool({
-  host : "database-1.ciplc66fgajs.us-east-1.rds.amazonaws.com",
+  host : "database-1.cnff0sg0k2br.us-east-1.rds.amazonaws.com",
   user : "chat",
   password : "chat1234",
   port : "3306",
